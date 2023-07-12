@@ -19,6 +19,16 @@ import 'package:flutter_widgets/views/widgets/animated_phyical_model.dart';
 import 'package:flutter_widgets/views/widgets/animated_rotation.dart';
 import 'package:flutter_widgets/views/widgets/animated_size.dart';
 import 'package:flutter_widgets/views/widgets/animated_switcher.dart';
+import 'package:flutter_widgets/views/widgets/appbar.dart';
+import 'package:flutter_widgets/views/widgets/aspect_ration.dart';
+import 'package:flutter_widgets/views/widgets/autocomplate.dart';
+import 'package:flutter_widgets/views/widgets/banner_widget.dart';
+import 'package:flutter_widgets/views/widgets/baseline.dart';
+import 'package:flutter_widgets/views/widgets/black_drop.dart';
+import 'package:flutter_widgets/views/widgets/block_semantics.dart';
+import 'package:flutter_widgets/views/widgets/bottom_navigationbar.dart';
+import 'package:flutter_widgets/views/widgets/bottom_sheet.dart';
+import 'package:flutter_widgets/views/widgets/builder.dart';
 import 'package:get/get.dart';
 
 void main(){
@@ -28,7 +38,7 @@ void main(){
       theme: ThemeData.light(useMaterial3: true),
       darkTheme: ThemeData.dark(useMaterial3: true),
       themeMode: ThemeMode.system,
-      initialRoute: "/animated_switcher",
+      initialRoute: "/builder",
       getPages: [
         GetPage(name: "/", page: () =>const About_Dialog(),),
         GetPage(name: "/About_ListTile", page: () =>const About_ListTile(),),
@@ -50,6 +60,16 @@ void main(){
         GetPage(name: "/animated_rotation", page: () =>const animted_rotation(),),
         GetPage(name: "/animated_size", page: () =>const animted_size(),),
         GetPage(name: "/animated_switcher", page: () =>const animted_switcher(),),
+        GetPage(name: "/app_Bar", page: () =>const app_Bar(),),
+        GetPage(name: "/aspect_ratio", page: () =>const aspect_ratio(),),
+        GetPage(name: "/Auto_complete", page: () =>const Auto_complete(),),
+        GetPage(name: "/black_drop", page: () =>const black_drop(),),
+        GetPage(name: "/banner_widget", page: () =>const banner_widget(),),
+        GetPage(name: "/baseline_widget", page: () =>const baseline_widget(),),
+        GetPage(name: "/block_semantics", page: () =>const block_semantics(),),
+        GetPage(name: "/bottom_navigation-bar", page: () =>const bottom_navigationbar(),),
+        GetPage(name: "/bottom_sheet", page: () =>const bottom_sheet(),),
+        GetPage(name: "/builder", page: () =>const builder(),),
       ],
     )
   );
