@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/views/widgets/Circular_Progress_Indicator.dart';
 import 'package:flutter_widgets/views/widgets/about_dialog.dart';
 import 'package:flutter_widgets/views/widgets/about_listtile.dart';
 import 'package:flutter_widgets/views/widgets/absorbpointer.dart';
@@ -28,7 +29,17 @@ import 'package:flutter_widgets/views/widgets/black_drop.dart';
 import 'package:flutter_widgets/views/widgets/block_semantics.dart';
 import 'package:flutter_widgets/views/widgets/bottom_navigationbar.dart';
 import 'package:flutter_widgets/views/widgets/bottom_sheet.dart';
+import 'package:flutter_widgets/views/widgets/buttonbar.dart';
 import 'package:flutter_widgets/views/widgets/builder.dart';
+import 'package:flutter_widgets/views/widgets/card_widget.dart';
+import 'package:flutter_widgets/views/widgets/center.dart';
+import 'package:flutter_widgets/views/widgets/check_box_widget.dart';
+import 'package:flutter_widgets/views/widgets/checkbox_listtile.dart';
+import 'package:flutter_widgets/views/widgets/chip_widget.dart';
+import 'package:flutter_widgets/views/widgets/choice_chip_widget.dart';
+import 'package:flutter_widgets/views/widgets/circle_avatar_widget.dart';
+import 'package:flutter_widgets/views/widgets/clip_path_widget.dart';
+import 'package:flutter_widgets/views/widgets/clipoval_widget.dart';
 import 'package:get/get.dart';
 
 void main(){
@@ -38,7 +49,6 @@ void main(){
       theme: ThemeData.light(useMaterial3: true),
       darkTheme: ThemeData.dark(useMaterial3: true),
       themeMode: ThemeMode.system,
-      initialRoute: "/builder",
       getPages: [
         GetPage(name: "/", page: () =>const About_Dialog(),),
         GetPage(name: "/About_ListTile", page: () =>const About_ListTile(),),
@@ -70,7 +80,19 @@ void main(){
         GetPage(name: "/bottom_navigation-bar", page: () =>const bottom_navigationbar(),),
         GetPage(name: "/bottom_sheet", page: () =>const bottom_sheet(),),
         GetPage(name: "/builder", page: () =>const builder(),),
+        GetPage(name: "/button_bar", page: () =>const button_bar(),),
+        GetPage(name: "/card", page: () =>const card(),),
+        GetPage(name: "/center_widget", page: () =>const center_widget(),),
+        GetPage(name: "/checkbox_widget", page: () =>const checkbox_widget(),),
+        GetPage(name: "/checkbox_ListTile_widget", page: () =>const checkbox_ListTile_widget(),),
+        GetPage(name: "/Chip_Widget", page: () =>const Chip_Widget(),),
+        GetPage(name: "/choice_chip_widget", page: () =>const choice_chip_widget(),),
+        GetPage(name: "/circle_avatar_widget", page: () =>const circle_avatar_widget(),),
+        GetPage(name: "/Circular_Progress_Indicator_widget", page: () =>const Circular_Progress_Indicator_widget(),),
+        GetPage(name: "/clipoval_widget", page: () =>const clipoval_widget(),),
+        GetPage(name: "/clippath_widget", page: () =>const clippath_widget(),),
       ],
+      initialRoute: "/clippath_widget",
     )
   );
 }
